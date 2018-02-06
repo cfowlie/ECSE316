@@ -3,8 +3,8 @@ import sys
 from socket import *
 
 
-serverName = 
-serverPort = 1
+serverName = '142.157.21.202'
+serverPort = 1200
 clientSocker = socket(socket.AF_INET, socket.SOCK_DGRAM)
 clientSocket.settimeout(1)
 

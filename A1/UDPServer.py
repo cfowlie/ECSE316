@@ -2,7 +2,7 @@ import sys
 import time
 from socket import *
 
-serverPort = 
+serverPort = 1200 
 serverSocket = socket(AF_INET, SOCK_DGRAM)
 serverSocket.bind(('',serverPort))
 

@@ -10,6 +10,6 @@ while 1:
 
   message, clientAddress = serverSocket.recvfrom(2048)
   pingRecievedTime = time.time()
-  returnMessage = (message, pingRecievedTime)
-  serverSocket.sendTo(returnMessage, clientAddress)
+  returnMessage = message + ","+ str(pingRecievedTime)
+  serverSocket.sendto(returnMessage, clientAddress)
 

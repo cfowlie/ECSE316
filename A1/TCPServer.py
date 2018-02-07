@@ -13,4 +13,3 @@ while 1:
 	pingRecievedTime = time.time()
 	returnMessage =  message + ","+ str(pingRecievedTime)
 	connectionSocket.send(returnMessage)
-	connectionSocket.close()

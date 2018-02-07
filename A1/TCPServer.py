@@ -11,6 +11,6 @@ while 1:
 	connectionSocket, addr = serverSocket.accept()
 	message = connectionSocket.recv(2048)
 	pingRecievedTime = time.time()
-	returnMessage = (message, pingRecievedTime)
+	returnMessage =  message + ","+ str(pingRecievedTime)
 	connectionSocket.send(returnMessage)
 	connectionSocket.close()
